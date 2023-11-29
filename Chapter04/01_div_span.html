@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div & span</title>
+</head>
+<body>
+    <!--
+        layout tag
+            - 블록 요소와 인라인 요소
+            - div & span
+            - 시맨틱 요소
+        블록요소 vs 인라인 요소
+            - block
+                - 가능한 전체 너비를 차지
+                - 항상 새로운 줄에서 시작
+                - width, height, margin, padding 등을
+                  사용하녕 크기와 간격을 변경 할 수 있음
+            - 블록 요소의 종류
+                - address, article, aside, audio,blockquote, 
+                  canvas, dd, div, dl, fieldset, figcaption, 
+                  figure, footer, form, h1, h2, h3, h4, h5, h6
+                  header, hgroup, hr, noscript, ol, output, p
+                  pre, section, table, ul, video
+            - inline
+                - 콘텐츠 크기만큼 너비를 차지
+                - 새로운 줄에서 시작하지 않음
+                - width, height로 크기를 변경할 수 없음
+                - line-herght로 줄의 높이를 변경
+                - text-align으로 수평 정렬
+            - inline 요소의 종류
+                - a, abbr, acronym, b, bdo, big, br, button, cite,
+                  code, dfn, em, i, img, input, kbd, map, object
+                  q, samp, small, script, select, span, strong, sub,
+                  sup, textarea, tt, var
+
+            * div(공간 분할 태그)
+                - 블록 형식으로 공간 분할
+            * span(공간 분할 태그)
+                - 인라인 형식으로 공간 분할
+            
+            *Semantic element
+                - 브라우저에 의미나 목적을 명확하게 알려주는 요소
+                    - <header>      : 문서의 머리말
+                    - <hgroup>      : h1~h6 요소의 그룹
+                    - <nav>         : 네비게이션 링크
+                    - <article>     : 문서의 내용이나 포스트
+                    - <secction>    : 문서의 섹션
+                    - <aside>       : 사이드 바
+                    - <footer>      : 문서의 꼬리말
+                    - <figure>      : 그림이나 도표
+                    - <time>        : 날짜와 시간 표시    
+    --> 
+
+    <!-- 
+        div(divied : 나누다 - 공간(영역)을 나누다)
+        : 페이지를 논리적인 영역으로 분리하기 위해서 사용하는 태그
+        - block 요소(상위영역의 전채 너비를 차지하는 요소) 
+
+     -->
+<div style="border : 2px solid blue;">
+    <h2>HtML</h2>
+    <p>HiperText Markup Language</p>
+
+</div>
+<!-- 
+    span
+    : 요소의 내용이 필요한 크기만 차지하는 태그
+    - 디자인적으로 구분이 필요한 요소를 지정할 때 사용
+    - inline 요소(다른 요소와 한 줄에 나란히 배치되는 요소)
+ -->
+<div style="border: 2px solid red;">
+    <h2>CSS</h2>
+    <P>
+        Cascading
+        <span style="color: red; background-color: yellow;">
+            Style
+        </span>
+        Sheets
+    </P>
+
+</div>
+<!-- 
+    * block 요소에 block/inline 요소 포함 가능
+    * inline 요소에는 inline요소만 포함 가능
+    * inline 요소 안에는 block 요소 작성을 권장하지 않음
+-->
+
+
+
+
+</body>
+</html>
