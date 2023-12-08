@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>CSS_text</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: o;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: left;
+            width: auto;
+        }
+        li a {
+            display: block;
+            color: aliceblue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+      /*  li a:hover {
+            background-color: #111;
+        }*/
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        .active {
+            background-color: #04aa6d;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="striped_table.html">News</a></li>
+        <li><a href="positio_fixed.html">Contact</a></li>
+        <li><a href="responsive_table.html">About</a></li>
+      </ul>
+    <p class="dotted">Dotted</p>
+    <p class="dashed">Dashed"</p>
+    <p class="solid">Solid</p>
+    <p class="double">Double</p>
+    <p class="groove">Groove</p>
+    <p class="ridge">Ridge</p>
+    <p class="inset">Inset</p>
+    <p class="outset">Outset</p>
+    <p class="none">None</p>
+    <p class="hidden">Hidden</p>
+    <p class="mix">Mix</p>
+</body>
+</html>

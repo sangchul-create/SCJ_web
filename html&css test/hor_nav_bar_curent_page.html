@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: o;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: left;
+            width: auto;
+        }
+        li a {
+            display: block;
+            color: aliceblue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+      /*  li a:hover {
+            background-color: #111;
+        }*/
+        li a:hover:not(.active) {background-color: #111;}
+        .active {
+            background-color: #04aa6d;
+        }
+    </style>
+</head>
+<body>
+  <h2>Horizontal Navigation Bar</h2>  
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="striped_table.html">News</a></li>
+    <li><a href="positio_fixed.html">Contact</a></li>
+    <li><a href="responsive_table.html">About</a></li>
+  </ul>
+</body>
+</html>

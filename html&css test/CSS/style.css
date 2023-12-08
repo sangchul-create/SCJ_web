@@ -1,0 +1,37 @@
+p{ font-size: 30px; text-align: center;}
+p.dotted{
+    border-style:dotted;
+    /* border-width:5px; */
+    border-width:thick;
+    }
+p.dashed{
+    border-style:dashed;
+    border-width: 5px 20px;
+
+}
+p.solid {
+    border-style:solid;
+    border-width:25px 10px 4px 35px;  /*  25 top   10 right  4 bottom  35 left*/
+    border-color:green;
+
+}
+p.double{
+    border-style: double;
+    border-color: red green blue yellow;
+}
+p.groove{border-style: groove;}
+p.ridge{
+    /* border-style: ridge; */
+    border-top-style:dotted;
+    border-right-style:soled;
+    border-bottom-style:dotted;
+    border-left-style:solid;
+}
+p.inset{
+    /* border-style: inset; */
+    border-style:dotted solid;
+}
+p.outset{border-style: outset;}
+p.none{border-style: none;}
+p.hidden{border-style: hidden;}
+p.mix{border-style: dotted dashed solid double;}

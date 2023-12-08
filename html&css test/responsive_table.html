@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: o;
+                overflow: hidden;
+                background-color: #333;
+            }
+            li {
+                float: left;
+                width: auto;
+            }
+            li a {
+                display: block;
+                color: aliceblue;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+          /*  li a:hover {
+                background-color: #111;
+            }*/
+            li a:hover:not(.active) {background-color: #111;}
+            .active {
+                background-color: #04aa6d;
+            }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+    tr:nth-child(even){background-color: #f2f2f2;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="striped_table.html">News</a></li>
+        <li><a href="positio_fixed.html">Contact</a></li>
+        <li><a class="active" href="responsive_table.html">About</a></li>
+      </ul>
+    <h2>Responsive Table</h2>
+    <p>A responsive table will display a horizontal scroll bar if the screen is too 
+    small to display the full content. Resize the browser window to see the effect:</p>
+    <p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the table element:</p>   
+    <div style="overflow-x:auto;">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>Jonson</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+            </tr>
+        </table>
+    </div> 
+</body>
+</html>

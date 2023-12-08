@@ -1,0 +1,58 @@
+/* 4개 값: 위 오른쪽 아래 왼쪽 */
+p.a1{
+    border-style:dotted solid double dashed;
+}
+/* 3개 값 : top right bottom */
+p.a2{
+    border-style:dotted solid double;
+}
+/* 2개 값 : top right */
+p.a3{
+    border-style:dotted solid;
+
+}
+
+/* 한개 값 : all four borders are dotted */
+p.a4{
+    border-style: dotted;
+}
+
+/* 라운드 border radius */
+p.a4 {
+    border:2px solid red;
+    border-radius: 5px;
+}
+p.a1{
+    /* margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right:150px;
+    margin-left: 80px;
+    */
+/*  margin shorthand */
+margin: 100px 150px 100px 80px;
+}
+p.a5{
+    border:solid;
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-right:150px;
+    margin-left:80px;
+
+}
+
+div{
+    width:300px;
+    padding: 25px;
+}
+
+div.p1{
+    width: 300px;
+    padding: 25px;
+    box-sizing:border-box;
+}
+div.height{
+    border: solid green;
+    height: auto;
+    width: 100%;
+    padding-left: 0px;
+}

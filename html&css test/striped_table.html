@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Striped Table</title>
+    <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: o;
+                overflow: hidden;
+                background-color: #333;
+            }
+            li {
+                float: left;
+                width: auto;
+            }
+            li a {
+                display: block;
+                color: aliceblue;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+          /*  li a:hover {
+                background-color: #111;
+            }*/
+            li a:hover:not(.active) {background-color: #111;}
+            .active {
+                background-color: #04aa6d;
+            }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align:left;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color: #f2f2f2;       
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="striped_table.html">News</a></li>
+        <li><a href="positio_fixed.html">Contact</a></li>
+        <li><a href="responsive_table.html">About</a></li>
+      </ul>
+    <h2>Striped Table</h2>
+    <P>For zebra-striped tables, use the nth-child() selector and add a background-color to all even(or odd) table rows:</P>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>First Name</th>
+            <th>First Name</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+</body>
+</html>
